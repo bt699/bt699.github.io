@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "git pull push !"
+title:  "git pull push 入门教程!"
 date:   2019-01-06 13:19:48 +0800
 categories: git pull
 
