@@ -31,6 +31,7 @@ print(remove_tags(x))
 {% endhighlight %}
 
 # 输出 #
+IDLE选择菜单Run 再选择 Run Module
 {% highlight python %}
 =======
 
