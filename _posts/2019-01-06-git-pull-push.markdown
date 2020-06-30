@@ -13,6 +13,13 @@ categories: git pull
 5. 他会监控工作区的状态树，使用它会把工作时的所有变化提交到暂存区
 6. 提交暂存区的文件
 7. 本地分支的更新，推送到远程主机
+8. 单独合并一个提交  
+
+# git TortoiseGit入门教程  #
+TortoiseGit
+A Git client for Windows
+Version 2.7.0
+安装key是在Pageant图标里
 
 {% highlight ruby %}
 1. git init
@@ -28,6 +35,9 @@ categories: git pull
 6. git commit -m "add"
 
 7. git push [name] [master]
+
+8. git cherry-pick [commit id]
+
 
 {% endhighlight %}
 
