@@ -19,7 +19,11 @@ categories: git pull
 TortoiseGit
 A Git client for Windows
 Version 2.7.0
+TortoiseGit-2.10.0.2-64bit.msi
 安装key是在Pageant图标里
+
+#下载m3u8格式
+[http://app.flvcd.com/m3u8%20downloader.zip](http://app.flvcd.com/m3u8%20downloader.zip)
 
 {% highlight ruby %}
 1. git init
