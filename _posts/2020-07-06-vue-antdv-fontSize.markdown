@@ -101,7 +101,7 @@ module.exports = {
 	第四步:写按钮
 	<a-button type="primary" @click="changeFont(25+'px')">改大小</a-button>
 方案六(多窗口组件):
- 第一步:组件件上加上style="font-size: var(--fsb);记住size和var之间一定要有空格 
+ 第一步:组件件上加上style="font-size: var(--fsb);记住size和var之间一定要有空格不能写成大写 
  <a-tabs v-if="multipage" :active-key="activePage" style="font-size: var(--fsb);margin-top: -8px; margin-bottom: 8px" :hide-add="true" type="editable-card" @change="changePage" @edit="editPage">
 <style scoped>
 ::v-deep .ant-tabs-nav-container{
