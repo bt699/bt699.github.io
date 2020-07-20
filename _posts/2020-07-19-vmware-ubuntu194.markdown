@@ -59,8 +59,52 @@ Your Paddle Fluid is installed successfully! Let's start deep Learning with Padd
 
 安装成功。
 
+重启登录不上ssh
+
+$ sudo apt-get install openssh-client
+
+新建文件
+sudo vi laji.py
+
+访问网址
+sudo apt-get install w3m
+
+下载文件
+wget http://192.168.230.1:8080/8047.zip
+
+下载unzip
+sudo apt install unzip
+
+wget http://192.168.230.1:8080/webserver.zip
+
+启动脚本
+sudo sh ./start.sh
+
+创建目录
+sudo mkdir conf
+sudo mkdir model
 
 
+mkdir -p /home/work/paddle-predictor/resources/model
+cp -r /home/work/paddle-predictor/$(dirname `find webserver/model/ -name '__model__' -type f`)/* /home/work/paddle-predictor/resources/model/
+cp -r /home/work/paddle-predictor/webserver/model/freeze-model/* /home/work/paddle-predictor/resources/model/
+cp -r ~/laji/webserver/model/freeze-model/* /home/work/paddle-predictor/resources/model/
+
+安装django
+python2.7 -m pip install django==1.11.4 -i https://mirror.baidu.com/pypi/simple
+
+cp /home/work/paddle-predictor/webserver/server.conf /home/work/paddle-predictor/src/conf/server.conf
+
+访问django
+python2.7 manage.py runserver
+File "/home/work/paddle-predictor/webserver/webserver/urls.py", line 19, in <module>
+    from django.urls import re_path
+ImportError: cannot import name re_path
+排查原因:from django.urls import re_path应该是from django.conf.urls import url
+路由部分也要path应该是url。完美成功运行。
+urlpatterns = [
+     url(正则表达式, views视图函数，参数),
+]
 
 
 
