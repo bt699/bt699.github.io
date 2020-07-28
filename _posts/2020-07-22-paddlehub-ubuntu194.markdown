@@ -93,6 +93,7 @@ config = hub.RunConfig(
 AttributeError: 'Parameter' object has no attribute 'gradient_clip_attr'
 
 排查错误：vi /opt/conda/envs/python27-paddle120-env/lib/python2.7/site-packages/paddlehub/common/paddle_helper.py
+vi /opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddlehub/common/paddle_helper.py
 
 添加
 import paddle
