@@ -8,7 +8,7 @@ categories: python
 # vmware-ubuntu194 #
 用vmware安装ubuntu19.4时一直提示安装失败。
 排查原因：必须选择【update to the new installer】即成功安装。不要选择【continue without updating】否作安装失败。
-
+同时等更新完成会重启，在进入下一步就正常了
 查看ubuntu的ip 答：ifconfig
 
 替换源
@@ -20,6 +20,11 @@ cn.archive.ubuntu.com/ubuntu替换为mirrors.aliyun.com
 :%s#aliyun.com#aliyun.com/ubuntu#g
 
 :%s#aliyun.com/ubuntu#aliyun.com/ubuntu/#g
+
+:%s#cn.archive.ubuntu.com/ubuntu#mirrors.aliyun.com/ubuntu#g
+
+:%s#mirrors.aliyun.com/ubuntu/#cn.archive.ubuntu.com/ubuntu#g
+
 
 复制20.4源文件
 [](https://developer.aliyun.com/mirror/ubuntu?spm=a2c6h.13651102.0.0.3e221b11BskBlO)
